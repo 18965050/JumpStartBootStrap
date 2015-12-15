@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Bootstrap Grid System</title>
+    <title>My First Bootstrap Website</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!--[if lt IE 9]>
@@ -15,19 +15,20 @@
 <body>
 <div class="container">
     <div class="row">
-        <div class="col-xs-12 col-sm-6 col1">
-            <h4>Column 1</h4>
+        <div class="col-md-6 col1">
+            <h3>Column 1</h3>
+            <!-- Nesting Starts -->
+            <div class="row">
+                <div class="col-md-6 col3">
+                    <h3>Column 4</h3>
+                </div>
+                <div class="col-md-6 col4">
+                    <h3>Column 5</h3>
+                </div>
+            </div>
         </div>
-        <div class="col-xs-12 col-sm-6 col2">
-            <h4>Column 2</h4>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12 col-sm-6 col3">
-            <h4>Column 3</h4>
-        </div>
-        <div class="col-xs-12 col-sm-6 col4">
-            <h4>Column 4</h4>
+        <div class="col-md-6 col2">
+            <h3>Column 2</h3>
         </div>
     </div>
 </div>
