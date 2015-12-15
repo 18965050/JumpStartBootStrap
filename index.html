@@ -6,30 +6,335 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Bootstrap Grid System</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
 <body>
+
 <div class="container">
-    <div class="row">
-        <div class="col-xs-12 col-sm-6 col1">
-            <h4>Column 1</h4>
+    <!--==========================Page Component============================ -->
+    <!-- page header -->
+    <div class="page-header">
+        <h1>Chapter 3
+            <small>Exploring Bootstrap Components</small>
+        </h1>
+    </div>
+
+    <!-- panel -->
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            ATTENTION
         </div>
-        <div class="col-xs-12 col-sm-6 col2">
-            <h4>Column 2</h4>
+        <div class="panel-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua.
+        </div>
+        <div class="panel-footer">
+            <a href="#" class="btn btn-danger btn-sm">Agree</a>
+            <a href="#" class="btn btn-default btn-sm">Decline</a>
         </div>
     </div>
-    <div class="row">
-        <div class="col-xs-12 col-sm-6 col3">
-            <h4>Column 3</h4>
-        </div>
-        <div class="col-xs-12 col-sm-6 col4">
-            <h4>Column 4</h4>
+
+    <!-- media -->
+    <div class="media">
+        <a class="pull-left" href="#">
+            <img class="media-object" src="images/google.png" alt="Syed Fazle Rahman">
+        </a>
+
+        <div class="media-body">
+            <h4 class="media-heading">Awesome piece of work!</h4>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua.</p>
+            <!-- Second Media Object -->
+            <div class="media">
+                <a class="pull-left" href="#">
+                    <img class="media-object" src="images/sitepoint.png" alt="Syed Fazle Rahman">
+                </a>
+
+                <div class="media-body">
+                    <h4 class="media-heading">Awesome piece of work!</h4>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua.</p>
+                </div>
+            </div>
         </div>
     </div>
+
+    <!-- thumbnail -->
+    <div class="row">
+        <div class="col-xs-3">
+            <a href="#" class="thumbnail">
+                <img src="images/google.png">
+
+                <div class="caption">
+                    <h3>google</h3>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua.</p>
+
+                    <p><a href="#" class="btn btn-primary">Read More</a></p>
+                </div>
+            </a>
+        </div>
+        <div class="col-xs-3">
+            <a href="#" class="thumbnail">
+                <img src="images/apple.png">
+
+                <div class="caption">
+                    <h3>apple</h3>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua.</p>
+
+                    <p><a href="#" class="btn btn-primary">Read More</a></p>
+                </div>
+            </a>
+        </div>
+        <div class="col-xs-3">
+            <a href="#" class="thumbnail">
+                <img src="images/microsoft.png">
+
+                <div class="caption">
+                    <h3>microsoft</h3>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua.</p>
+
+                    <p><a href="#" class="btn btn-primary">Read More</a></p>
+                </div>
+            </a>
+        </div>
+        <div class="col-xs-3">
+            <a href="#" class="thumbnail">
+                <img src="images/sitepoint.png">
+
+                <div class="caption">
+                    <h3>sitepoint</h3>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua.</p>
+
+                    <p><a href="#" class="btn btn-primary">Read More</a></p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- list group -->
+    <h1>My MailBox</h1>
+
+    <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-info">Inbox<span class="badge">14</span></a>
+        <a href="#" class="list-group-item list-group-item-success">Sent<span class="badge">4</span></a>
+        <a href="#" class="list-group-item list-group-item-heading">Drafts<span class="badge">3</span></a>
+        <a href="#" class="list-group-item list-group-item-warning">Deleted<span class="badge">6</span></a>
+        <a href="#" class="list-group-item list-group-item-danger">Spam<span class="badge">2</span></a>
+        <a href="#" class="list-group-item active">
+            <h4 class="list-group-item-heading">Item heading</h4>
+
+            <p class="list-group-item-text">Lorem ipsum dolor sit ...</p>
+        </a>
+    </div>
+
+    <!--==========================Navigation Component============================ -->
+    <!-- nav tabs -->
+    <h1>nav-tabs</h1>
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#">About</a></li>
+        <li><a href="#">Activity</a></li>
+        <li><a href="#">Liked Pages</a></li>
+    </ul>
+
+    <h1>nav-pills</h1>
+    <ul class="nav nav-pills">
+        <li class="active"><a href="#">About</a></li>
+        <li><a href="#">Activity</a></li>
+        <li><a href="#">Liked Pages</a></li>
+    </ul>
+
+    <h1>nav-stacked</h1>
+    <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#">About</a></li>
+        <li><a href="#">Activity</a></li>
+        <li><a href="#">Liked Pages</a></li>
+    </ul>
+
+    <!-- navbar-->
+    <div class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar-content">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">SitePoint</a>
+            </div>
+            <div class="collapse navbar-collapse" id="mynavbar-content">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Board of Members</a></li>
+                            <li><a href="#">Developers Team</a></li>
+                            <li><a href="#">Designing Team</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Investors</a></li>
+                            <li><a href="#">Share holders</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- breadcrumb -->
+    <ol class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li class="active">Author</li>
+    </ol>
+
+    <!--==========================Standout Component============================ -->
+    <!-- label css-->
+    <h3>Jump Start Bootstrap <span class="label label-default">New</span></h3>
+    <!-- btn css-->
+    <a href="#" class="btn btn-primary">Click Here</a>
+    <button type="button" class="btn btn-primary btn-lg">Large button</button>
+    <button type="button" class="btn btn-primary">Default button</button>
+    <button type="button" class="btn btn-primary btn-sm">Small button</button>
+    <button type="button" class="btn btn-primary btn-xs">Extra small button</button>
+
+    <!-- glyphicon -->
+    <div>
+        <span class="glyphicon glyphicon-heart"></span>
+        <span class="glyphicon glyphicon-music"></span>
+    </div>
+
+    <!-- well -->
+    <div class="well">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. </p>
+    </div>
+
+    <!-- badge -->
+    <div>
+        <span class="badge">23</span>
+        <a href="#" class="btn btn-primary btn-lg">Inbox <span class="badge">23</span></a>
+    </div>
+
+    <!--==========================Forms Component============================ -->
+    <form class="form">
+        <div class="form-group">
+            <label for="nameField">Name</label>
+            <input type="text" class="form-control" id="nameField" placeholder="Your Name"/>
+        </div>
+        <div class="form-group">
+            <label for="emailField">Email</label>
+            <input type="email" class="form-control" id="emailField" placeholder="Your Email"/>
+        </div>
+        <div class="form-group">
+            <label for="phoneField">Phone</label>
+            <input type="text" class="form-control" id="phoneField" placeholder="Your Phone Number"/>
+        </div>
+        <div class="form-group">
+            <label for="descField">Description</label>
+            <textarea class="form-control" id="descField" placeholder="Your Comments"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="reset" class="btn btn-default">Reset</button>
+    </form>
+
+    <!-- form-horizontal -->
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label for="nameField" class="col-xs-2">Name</label>
+
+            <div class="col-xs-10">
+                <input type="text" class="form-control" id="nameField" placeholder="Your Name"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="emailField" class="col-xs-2">Email</label>
+
+            <div class="col-xs-10">
+                <input type="email" class="form-control" id="emailField" placeholder="Your Email"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="phoneField" class="col-xs-2">Phone</label>
+
+            <div class="col-xs-10">
+                <input type="text" class="form-control" id="phoneField" placeholder="Your Phone Number"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="descField" class="col-xs-2">Description</label>
+
+            <div class="col-xs-10">
+                <textarea class="form-control" id="descField" placeholder="Your Comments"></textarea>
+            </div>
+        </div>
+        <div class="col-xs-10 col-xs-offset-2">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="reset" class="btn btn-default">Reset</button>
+        </div>
+    </form>
+
+    <!-- form inline -->
+    <h1>&nbsp;</h1>
+    <div class="well well-sm">
+        <form class="form-inline">
+            <div class="form-group">
+                <input type="email" class="form-control" id="emailField" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" id="passwordField" placeholder="Password">
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> Remember me
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
+    </div>
+
+    <!-- radio, checkbox etc -->
+    <div class="radio">
+        <label>
+            <input type="radio" value="Male">
+            Male
+        </label>
+    </div>
+
+    <!-- helper class -->
+    <input class="form-control" type="text" placeholder="Disabled input here..." disabled>
+    <div class="form-group has-success">
+        <label class="control-label" for="inputField">Input with success</label>
+        <input type="text" class="form-control" id="inputField">
+    </div>
+
+    <input class="form-control input-lg" type="text" placeholder="Larger Input Field">
+    <input class="form-control" type="text" placeholder="Default Input Field">
+    <input class="form-control input-sm" type="text" placeholder="Smaller Input Field">
 </div>
 
 <script src="js/jquery-1.11.3.js"></script>
