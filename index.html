@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Bootstrap Grid System</title>
+    <title>Bootstrap Plugins</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -13,331 +13,550 @@
 </head>
 <body>
 
-<div class="container">
-    <!--==========================Page Component============================ -->
-    <!-- page header -->
-    <div class="page-header">
-        <h1>Chapter 3
-            <small>Exploring Bootstrap Components</small>
-        </h1>
-    </div>
+<!-- =======================Drop Down============================= -->
+<div class="dropdown">
+    <a data-toggle="dropdown" data-target="#" href="http://www.google.com">
+        Dropdown <span class="caret"></span><!--<span class=" glyphicon glyphicon-chevron-down"></span>-->
+    </a>
+    <ul class="dropdown-menu">
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+    </ul>
+</div>
 
-    <!-- panel -->
+<!-- drop down with nava-pills -->
+<ul class="nav nav-pills">
+    <li class="active"><a href="#">Home</a></li>
+    <li class="dropdown">
+        <a data-toggle="dropdown" data-target="#" href="http://www.google.com">
+            Profile <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Messages</a></li>
+</ul>
+
+<!-- drop down with jQuery -->
+<div class="dropdown" id="myDropdown">
+    <a class="myDropdownHandle" data-toggle="dropdown" data-target="#" href="#">
+        Dropdown <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+    </ul>
+</div>
+
+<!-- =======================Alert============================= -->
+<div class="alert alert-success">
+    Amount has been transferred successfully.
+</div>
+
+<div class="alert alert-success alert-dismissable">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    Amount has been transferred successfully.
+</div>
+
+<div class="alert alert-success alert-dismissable">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    Amount has been transferred successfully. Go to <a href="#" class="alert-link">account page</a>.
+</div>
+
+<!-- =======================Button============================= -->
+<div>
+    <button type="button" class="btn btn-lg btn-default" data-toggle="button">Toggle Me!</button>
+</div>
+
+<!-- btn-group with checkbox -->
+<div class="btn-group" data-toggle="buttons">
+    <label class="btn btn-default">
+        <input type="checkbox"> Option 1
+    </label>
+    <label class="btn btn-default">
+        <input type="checkbox"> Option 2
+    </label>
+    <label class="btn btn-default">
+        <input type="checkbox"> Option 3
+    </label>
+</div>
+
+<!-- btn-group with radio -->
+<div class="btn-group" data-toggle="buttons">
+    <label class="btn btn-info">
+        <input type="radio" name="options"> Option 1
+    </label>
+    <label class="btn btn-info">
+        <input type="radio" name="options"> Option 2
+    </label>
+    <label class="btn btn-info">
+        <input type="radio" name="options"> Option 3
+    </label>
+</div>
+
+<button id="myLoadingButton" type="button" class="btn btn-primary" data-loading-text="loading stuff...">Load data
+</button>
+<button id="myCompleteButton" type="button" class="btn btn-primary" data-complete-text="Completed!">Load data</button>
+<h1>&nbsp;</h1>
+
+<!-- =======================Manage Content============================= -->
+<!-- scroll spy -->
+<nav id="navbarExample" class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbarLinks">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">SitePoint</a>
+        </div>
+        <div class="collapse navbar-collapse navbarLinks">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#home">Home</a></li>
+                <li class=""><a href="#about">About</a></li>
+                <li class=""><a href="#contact">Contact Us</a></li>
+                <li class=""><a href="#map">Map</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div data-spy="scroll" data-target="#navbarExample" data-offset="0" class="scrollspy-example">
+    <h4 id="Home">Home</h4>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+    <h4 id="about">About</h4>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+    <h4 id="contact">Contact Us</h4>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+    <h4 id="map">Map</h4>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.</p>
+</div>
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs">
+    <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+    <li><a href="#profile" data-toggle="tab">Profile</a></li>
+    <li><a href="#messages" data-toggle="tab">Messages</a></li>
+    <li><a href="#settings" data-toggle="tab">Settings</a></li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+    <div class="tab-pane fade in active" id="home">
+        <h3>The home</h3>
+    </div>
+    <div class="tab-pane fade" id="profile">
+        <h3>The profile</h3>
+    </div>
+    <div class="tab-pane fade" id="messages">
+        <h3>Messages central</h3>
+    </div>
+    <div class="tab-pane fade" id="settings">
+        <h3>Setting panel</h3>
+    </div>
+</div>
+
+<!-- Collapse -->
+<div class="panel-group" id="accordion">
+    <!-- Panel 1 -->
     <div class="panel panel-default">
         <div class="panel-heading">
-            ATTENTION
-        </div>
-        <div class="panel-body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua.
-        </div>
-        <div class="panel-footer">
-            <a href="#" class="btn btn-danger btn-sm">Agree</a>
-            <a href="#" class="btn btn-default btn-sm">Decline</a>
-        </div>
-    </div>
-
-    <!-- media -->
-    <div class="media">
-        <a class="pull-left" href="#">
-            <img class="media-object" src="images/google.png" alt="Syed Fazle Rahman">
-        </a>
-
-        <div class="media-body">
-            <h4 class="media-heading">Awesome piece of work!</h4>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua.</p>
-            <!-- Second Media Object -->
-            <div class="media">
-                <a class="pull-left" href="#">
-                    <img class="media-object" src="images/sitepoint.png" alt="Syed Fazle Rahman">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                    Collapsible Group Item #1
                 </a>
-
-                <div class="media-body">
-                    <h4 class="media-heading">Awesome piece of work!</h4>
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua.</p>
-                </div>
+            </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in">
+            <div class="panel-body">
+                Lorem ipsum dolor sit amet, consectetur ...
             </div>
         </div>
     </div>
-
-    <!-- thumbnail -->
-    <div class="row">
-        <div class="col-xs-3">
-            <a href="#" class="thumbnail">
-                <img src="images/google.png">
-
-                <div class="caption">
-                    <h3>google</h3>
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua.</p>
-
-                    <p><a href="#" class="btn btn-primary">Read More</a></p>
-                </div>
-            </a>
+    <!-- Panel 2 -->
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                    Collapsible Group Item #2
+                </a>
+            </h4>
         </div>
-        <div class="col-xs-3">
-            <a href="#" class="thumbnail">
-                <img src="images/apple.png">
-
-                <div class="caption">
-                    <h3>apple</h3>
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua.</p>
-
-                    <p><a href="#" class="btn btn-primary">Read More</a></p>
-                </div>
-            </a>
-        </div>
-        <div class="col-xs-3">
-            <a href="#" class="thumbnail">
-                <img src="images/microsoft.png">
-
-                <div class="caption">
-                    <h3>microsoft</h3>
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua.</p>
-
-                    <p><a href="#" class="btn btn-primary">Read More</a></p>
-                </div>
-            </a>
-        </div>
-        <div class="col-xs-3">
-            <a href="#" class="thumbnail">
-                <img src="images/sitepoint.png">
-
-                <div class="caption">
-                    <h3>sitepoint</h3>
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua.</p>
-
-                    <p><a href="#" class="btn btn-primary">Read More</a></p>
-                </div>
-            </a>
-        </div>
-    </div>
-
-    <!-- list group -->
-    <h1>My MailBox</h1>
-
-    <div class="list-group">
-        <a href="#" class="list-group-item list-group-item-info">Inbox<span class="badge">14</span></a>
-        <a href="#" class="list-group-item list-group-item-success">Sent<span class="badge">4</span></a>
-        <a href="#" class="list-group-item list-group-item-heading">Drafts<span class="badge">3</span></a>
-        <a href="#" class="list-group-item list-group-item-warning">Deleted<span class="badge">6</span></a>
-        <a href="#" class="list-group-item list-group-item-danger">Spam<span class="badge">2</span></a>
-        <a href="#" class="list-group-item active">
-            <h4 class="list-group-item-heading">Item heading</h4>
-
-            <p class="list-group-item-text">Lorem ipsum dolor sit ...</p>
-        </a>
-    </div>
-
-    <!--==========================Navigation Component============================ -->
-    <!-- nav tabs -->
-    <h1>nav-tabs</h1>
-    <ul class="nav nav-tabs">
-        <li class="active"><a href="#">About</a></li>
-        <li><a href="#">Activity</a></li>
-        <li><a href="#">Liked Pages</a></li>
-    </ul>
-
-    <h1>nav-pills</h1>
-    <ul class="nav nav-pills">
-        <li class="active"><a href="#">About</a></li>
-        <li><a href="#">Activity</a></li>
-        <li><a href="#">Liked Pages</a></li>
-    </ul>
-
-    <h1>nav-stacked</h1>
-    <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="#">About</a></li>
-        <li><a href="#">Activity</a></li>
-        <li><a href="#">Liked Pages</a></li>
-    </ul>
-
-    <!-- navbar-->
-    <div class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar-content">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">SitePoint</a>
-            </div>
-            <div class="collapse navbar-collapse" id="mynavbar-content">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Feedback</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Board of Members</a></li>
-                            <li><a href="#">Developers Team</a></li>
-                            <li><a href="#">Designing Team</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Investors</a></li>
-                            <li><a href="#">Share holders</a></li>
-                        </ul>
-                    </li>
-                </ul>
+        <div id="collapseTwo" class="panel-collapse collapse">
+            <div class="panel-body">
+                Lorem ipsum dolor sit amet, consectetur ...
             </div>
         </div>
     </div>
-
-    <!-- breadcrumb -->
-    <ol class="breadcrumb">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li class="active">Author</li>
-    </ol>
-
-    <!--==========================Standout Component============================ -->
-    <!-- label css-->
-    <h3>Jump Start Bootstrap <span class="label label-default">New</span></h3>
-    <!-- btn css-->
-    <a href="#" class="btn btn-primary">Click Here</a>
-    <button type="button" class="btn btn-primary btn-lg">Large button</button>
-    <button type="button" class="btn btn-primary">Default button</button>
-    <button type="button" class="btn btn-primary btn-sm">Small button</button>
-    <button type="button" class="btn btn-primary btn-xs">Extra small button</button>
-
-    <!-- glyphicon -->
-    <div>
-        <span class="glyphicon glyphicon-heart"></span>
-        <span class="glyphicon glyphicon-music"></span>
+    <!-- Panel 3 -->
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                    Collapsible Group Item #3
+                </a>
+            </h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse">
+            <div class="panel-body">
+                Lorem ipsum dolor sit amet, consectetur ...
+            </div>
+        </div>
     </div>
-
-    <!-- well -->
-    <div class="well">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. </p>
-    </div>
-
-    <!-- badge -->
-    <div>
-        <span class="badge">23</span>
-        <a href="#" class="btn btn-primary btn-lg">Inbox <span class="badge">23</span></a>
-    </div>
-
-    <!--==========================Forms Component============================ -->
-    <form class="form">
-        <div class="form-group">
-            <label for="nameField">Name</label>
-            <input type="text" class="form-control" id="nameField" placeholder="Your Name"/>
-        </div>
-        <div class="form-group">
-            <label for="emailField">Email</label>
-            <input type="email" class="form-control" id="emailField" placeholder="Your Email"/>
-        </div>
-        <div class="form-group">
-            <label for="phoneField">Phone</label>
-            <input type="text" class="form-control" id="phoneField" placeholder="Your Phone Number"/>
-        </div>
-        <div class="form-group">
-            <label for="descField">Description</label>
-            <textarea class="form-control" id="descField" placeholder="Your Comments"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-        <button type="reset" class="btn btn-default">Reset</button>
-    </form>
-
-    <!-- form-horizontal -->
-    <form class="form-horizontal">
-        <div class="form-group">
-            <label for="nameField" class="col-xs-2">Name</label>
-
-            <div class="col-xs-10">
-                <input type="text" class="form-control" id="nameField" placeholder="Your Name"/>
-            </div>
-        </div>
-        <div class="form-group">
-            <label for="emailField" class="col-xs-2">Email</label>
-
-            <div class="col-xs-10">
-                <input type="email" class="form-control" id="emailField" placeholder="Your Email"/>
-            </div>
-        </div>
-        <div class="form-group">
-            <label for="phoneField" class="col-xs-2">Phone</label>
-
-            <div class="col-xs-10">
-                <input type="text" class="form-control" id="phoneField" placeholder="Your Phone Number"/>
-            </div>
-        </div>
-        <div class="form-group">
-            <label for="descField" class="col-xs-2">Description</label>
-
-            <div class="col-xs-10">
-                <textarea class="form-control" id="descField" placeholder="Your Comments"></textarea>
-            </div>
-        </div>
-        <div class="col-xs-10 col-xs-offset-2">
-            <button type="submit" class="btn btn-primary">Submit</button>
-            <button type="reset" class="btn btn-default">Reset</button>
-        </div>
-    </form>
-
-    <!-- form inline -->
-    <h1>&nbsp;</h1>
-    <div class="well well-sm">
-        <form class="form-inline">
-            <div class="form-group">
-                <input type="email" class="form-control" id="emailField" placeholder="Enter email">
-            </div>
-            <div class="form-group">
-                <input type="password" class="form-control" id="passwordField" placeholder="Password">
-            </div>
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox"> Remember me
-                </label>
-            </div>
-            <button type="submit" class="btn btn-primary">Sign in</button>
-        </form>
-    </div>
-
-    <!-- radio, checkbox etc -->
-    <div class="radio">
-        <label>
-            <input type="radio" value="Male">
-            Male
-        </label>
-    </div>
-
-    <!-- helper class -->
-    <input class="form-control" type="text" placeholder="Disabled input here..." disabled>
-    <div class="form-group has-success">
-        <label class="control-label" for="inputField">Input with success</label>
-        <input type="text" class="form-control" id="inputField">
-    </div>
-
-    <input class="form-control input-lg" type="text" placeholder="Larger Input Field">
-    <input class="form-control" type="text" placeholder="Default Input Field">
-    <input class="form-control input-sm" type="text" placeholder="Smaller Input Field">
 </div>
+
+<!--tooltip-->
+<button type="button" class="btn btn-default tooltipButton"
+        data-toggle="tooltip" data-placement="bottom" title="I am a Bootstrap button">Who am I?
+</button>
+
+<!-- popover -->
+<button type="button" class="btn btn-danger popoverButton" data-toggle="popover" data-placement="bottom" data-content="Lorem Ipsum Donor."
+        title="This is a demo popover">
+    Click Me!
+</button>
+
+<!-- =======================Fancy============================= -->
+<!-- carousel -->
+<div id="bestCarsCarousel" class="carousel slide"
+     data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#bestCarsCarousel" data-slide-to="0"
+            class="active"></li>
+        <li data-target="#bestCarsCarousel" data-slide-to="1"></li>
+        <li data-target="#bestCarsCarousel" data-slide-to="2"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="images/car1.jpg" width="100%">
+            <div class="carousel-caption">
+                <h3>Car 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur ...</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/car2.jpg" width="100%">
+            <div class="carousel-caption">
+                <h3>Car 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur ...</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/car3.jpg" width="100%">
+            <div class="carousel-caption" >
+                <h3>Car 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur ...</p>
+            </div>
+        </div>
+    </div>
+    <!-- Controls -->
+    <a class="left carousel-control" href="#bestCarsCarousel"
+       data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#bestCarsCarousel"
+       data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <button type="button" class="close"
+                        data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Welcome Back!</h4>
+            </div>
+            <!-- Modal Body -->
+            <div class="modal-body">
+                <h1>Hello Readers!</h1>
+            </div>
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default"
+                        data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">
+                    Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<button class="btn btn-primary btn-lg" data-toggle="modal"
+        data-target="#myModal">
+    Launch modal
+</button>
 
 <script src="js/jquery-1.11.3.js"></script>
 <script src="js/bootstrap.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.myDropdownHandle').dropdown('toggle');
+
+        <!-- dropdown event-->
+        $('#myDropdown').on('show.bs.dropdown', function () {
+            console.log("Opening dropdown..");
+        });
+        $('#myDropdown').on('shown.bs.dropdown', function () {
+            console.log("Dropdown opened..");
+        });
+        $('#myDropdown').on('hide.bs.dropdown', function () {
+            console.log("Hiding dropdown..");
+        });
+        $('#myDropdown').on('hidden.bs.dropdown', function () {
+            console.log("Dropdown hidden..");
+        });
+
+        <!-- alert -->
+//        $(".alert").alert('close');
+
+        $('.alert').on('close.bs.alert', function () {
+            console.log("Closing alert..");
+        });
+
+        $('.alert').on('closed.bs.alert', function () {
+            console.log("Alert closed!");
+        });
+
+        $('#myLoadingButton').click(function () {
+            $(this).button('loading');
+        });
+        $('#myCompleteButton').click(function () {
+            $(this).button('complete');
+        });
+
+        $('.collapse').collapse({
+            toggle: false
+        });
+        var options = {
+            animation: true
+        };
+        $(".tooltipButton").tooltip(options);
+
+        var options = {
+            animation: true,
+            placement: "right"
+        };
+        $('.popoverButton').popover(options);
+
+        var options = {
+            interval: 5000,
+            pause: 'hover',
+            wrap: true
+        };
+        $('#bestCarsCarousel').carousel(options);
+
+        var options = {
+            backdrop: true,
+            keyboard: false,
+            show: true,
+            remote: false
+        }
+        $("#myModal").modal(options);
+    })
+    ;
+</script>
 </body>
 </html>
